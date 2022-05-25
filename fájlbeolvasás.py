@@ -37,4 +37,3 @@ if valasztas==1:
 elif valasztas==2:
     kerdes2=input("Adj meg egy országnevet: ")
     orszagnev(adatok)
-
