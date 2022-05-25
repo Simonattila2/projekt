@@ -11,7 +11,6 @@ print(adatok)
 def evszam(lista):
     kislista=[]
     for i in range(0,len(lista)):
-        print(i)
         if lista[i][2]==kerdes1:
             cucc=lista[i][0]
             kislista.append(cucc)
@@ -33,7 +32,7 @@ valasztas=int(input("Írj be egy 1-est ha keresni akarsz évszám alapján. Írj
 
 if valasztas==1:
     kerdes1=input("Adj meg egy évszámot: ")
-    evszam(adatok)
+    print(evszam(adatok))
 elif valasztas==2:
     kerdes2=input("Adj meg egy országnevet: ")
-    orszagnev(adatok)
+    print(orszagnev(adatok))
