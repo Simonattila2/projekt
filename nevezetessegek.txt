@@ -6,4 +6,3 @@ Eiffel-torony;Franciaország;1889
 One World Trade Center;USA;2013
 Csernobil;Ukrajna;1977
 Puskás Aréna;Magyarország;2019
-
