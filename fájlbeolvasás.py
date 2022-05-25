@@ -1,4 +1,4 @@
-j=open("nevezetessegek.txt","r")
+j=open("nevezetessegek.txt","r",encoding="utf-8")
 
 adatok=[]
 
