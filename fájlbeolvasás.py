@@ -28,7 +28,29 @@ def orszagnev(lista):
     if kislista==None:
         print("Nincs ilyen")
 
-valasztas=int(input("Írj be egy 1-est ha keresni akarsz évszám alapján. Írj be egy 2-est ha keresni akarsz országnév alapján: "))
+def nevlista(lista):
+    kislista1=[]
+    kislista2=[]
+    for i in range(0,len(lista)):
+        kislista1=lista[i][0]
+    print(kislista1)
+    for i in range(0,len(lista)):
+        if lista[i][0]==kerdes3:
+            kislista2=lista[i][0]
+            return kislista2
+    if kislista2==None:
+        print("Nincs ilyen")
+
+def nevezetesseget(lista):
+    kislista2=[]
+    for i in range(0,len(lista)):
+        if lista[i][0]==kerdes3:
+            kislista2=lista[i][0]
+            return kislista2
+    if kislista2==None:
+        print("Nincs ilyen")
+
+valasztas=int(input("Írj be egy 1-est ha keresni akarsz évszám alapján. Írj be egy 2-est ha keresni akarsz országnév alapján. Írj egy 3-ast ha nevezetesség alapján akarsz keresni: "))
 
 if valasztas==1:
     kerdes1=input("Adj meg egy évszámot: ")
@@ -36,3 +58,6 @@ if valasztas==1:
 elif valasztas==2:
     kerdes2=input("Adj meg egy országnevet: ")
     print(orszagnev(adatok))
+elif valasztas==3:
+    kerdes3=input("Adj meg egy nevezetességet: ")
+    print(nevlista(adatok))
