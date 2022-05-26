@@ -29,17 +29,10 @@ def orszagnev(lista):
         print("Nincs ilyen")
 
 def nevlista(lista):
-    kislista1=[]
-    kislista2=[]
+    kislista=[]
     for i in range(0,len(lista)):
-        kislista1=lista[i][0]
-    print(kislista1)
-    for i in range(0,len(lista)):
-        if lista[i][0]==kerdes3:
-            kislista2=lista[i][0]
-            return kislista2
-    if kislista2==None:
-        print("Nincs ilyen")
+        kislista.append(lista[i][0])
+    return kislista
 
 def nevezetesseget(lista):
     kislista2=[]
@@ -59,5 +52,6 @@ elif valasztas==2:
     kerdes2=input("Adj meg egy országnevet: ")
     print(orszagnev(adatok))
 elif valasztas==3:
-    kerdes3=input("Adj meg egy nevezetességet: ")
     print(nevlista(adatok))
+    input=("Írj be egy nevezetességet: ")
+    print()
